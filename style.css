@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+main {
+    min-height:100vh;
+    background: linear-gradient(to right top, #42275a, #48b1bf);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.glass{
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(to right bottom, 
+        rgba(255,255,255,0.7),
+        rgba(255,255,255,0.3) );
+    border-radius: 2rem;
+    z-index: 3;
+    backdrop-filter: blur(2rem);
+    display: flex;
+}
+
+.circle1, 
+.circle2 {
+    background: white;
+    width: 60%;
+    background: linear-gradient(to right bottom, 
+        rgba(255,255,255,0.8),
+        rgba(255,255,255,0.3));
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    position: absolute;
+}
+.circle1{
+    top:15%;
+    right: 15%;
+    z-index: 2;
+}
+.circle2 {
+    bottom:5%;
+    left: 10%;
+    z-index: 2;
+}
+
+.menu{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255,255,255,0.04),
+        rgba(255,255,255,0.01) );
+    border-radius: 2rem;
+    backdrop-filter: blur(2rem);
+}
+
+.user {
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0rem;
+    padding: 1rem 5rem;
+    align-items: center;
+}
+.me{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    clip-path: circle();
+}
+
+.pages {
+    display:flex;
+    flex:4;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 2rem 0rem;
+    padding: 1rem 5rem;
+    align-items: center;
+}
+.links {
+    display:flex;
+    flex:2;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 2rem 0rem;
+    align-items: center;
+}
+
+.guts{
+    display:flex;
+    flex-direction: column;
+    flex:2;
+    justify-content: space-evenly;
+    margin: 5rem 2rem;
+    text-align: left;
+    font-size: 24px;
+
+
+}
+.review {
+    display:flex;
+    flex:4;
+    text-align: left;
+
+}
+
+.column {
+    flex: 50%;
+    margin: 5rem 2rem;
+  }
